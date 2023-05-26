@@ -40,3 +40,17 @@ def dynamic_greeting(to_greet):
 dynamic_greeting('Bob')
 dynamic_greeting('Alice')
 dynamic_greeting('Rob')
+
+def find_treasure(to_search):
+    for test in to_search:
+        if(test == 'treasure'):
+            return True    
+    return False
+
+strings_one = ['one', 'treasure', 'three']
+contains_treasure = find_treasure(strings_one)
+print(contains_treasure)
+
+strings_one = ['one', 'two', 'three']
+contains_treasure = find_treasure(strings_one)
+print(contains_treasure)
